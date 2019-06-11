@@ -1,0 +1,26 @@
+
+def swap_case(s):
+    n=len(s)
+    m=[]
+    for i in range(0,n):
+        if 'a'<=s[i]<='z':
+            k=s[i].upper()
+            m.append(k)
+
+        elif 'A'<=s[i]<='Z':
+            k=s[i].lower()
+            m.append(k)
+        else:
+            k=s[i]
+            m.append(k)
+            continue
+    str1 = ''.join(m)
+    return str1
+
+
+
+
+if __name__ == '__main__':
+    s = raw_input()
+    result = swap_case(s)
+    print result
