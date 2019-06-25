@@ -1,0 +1,15 @@
+t=int(input())
+while t>0:
+    nA=int(input())
+    A=set(input().split())
+
+    nB=int(input())
+    B=set(input().split())
+
+    if A.issubset(B):
+        print("True")
+    else:
+        print("False")
+
+    t=t-1        
+    
