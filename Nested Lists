@@ -1,0 +1,29 @@
+n=int(input())
+m=[]
+h=[]
+for i in range(0,n):
+    l=[]
+    name=input()
+    marks=float(input())
+    l.append(marks)
+    l.append(name)
+    m.append(l)
+
+m.sort()
+
+x = []
+b = m[1][0]
+c = m[0][0]
+for i in range(1,n):
+    if c == m[i][0]:
+        b = m[i+1][0]
+
+
+for i in range(0,n):
+    if b==m[i][0]:
+        x.append(m[i][1])
+
+x.sort()
+for elem in x:
+    print(elem)
+
