@@ -1,0 +1,16 @@
+#! /bin/usr/env python
+n = int(input())
+
+flag = False
+x = input()
+x = list(map(int, x.split()))
+x.sort()
+if x[0]<0:
+    print("False")
+else:
+    for i in x:
+        s = str(i)
+        if s == s[::-1]:
+            flag = True
+            break 
+    print(flag)
